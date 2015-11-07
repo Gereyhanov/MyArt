@@ -117,7 +117,6 @@ public class ControlEditorView extends View{
             int cellY=(int)((event.getY()+getScrollY())/mScaleFactor);
             return true;
         }
-
         //обрабатываем двойной тап
         @Override
         public boolean onDoubleTapEvent(MotionEvent event){
