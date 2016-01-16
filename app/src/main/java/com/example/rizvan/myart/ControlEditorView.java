@@ -26,14 +26,12 @@ public class ControlEditorView extends View{
     private float canvasSizeVertical;
     private final int horizontalCountOfCells, verticalCountOfCells;
 
-
     private final ScaleGestureDetector scaleGestureDetector;
     private final int viewSizeHorizontal;
     private final int viewSizeVertical;
     private float mScaleFactor;
 
     private final GestureDetector detector;
-
 
     public ControlEditorView(Context context, AttributeSet attrs) {
         super(context, attrs);

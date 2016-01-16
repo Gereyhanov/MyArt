@@ -11,7 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Tab 2"
+        android:text="Maps"
         android:id="@+id/textView2"
         android:layout_gravity="center_horizontal" />
+
+    <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:id="@+id/fragment_map"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button 1"
+        android:onClick="but1"
+        android:id="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button 2"
+        android:onClick="but2"
+        android:id="@+id/button2" />
+
 </LinearLayout><!-- From: file:/C:/Users/Rizvan/AndroidStudioProjects/MyArt/app/src/main/res/layout/default_fragment_two.xml -->
