@@ -16,25 +16,48 @@
         android:layout_gravity="center_horizontal" />
 
     <fragment
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
             android:id="@+id/fragment_map"
-        />
+        android:layout_gravity="center_horizontal" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button 1"
+        android:text="Determine the coordinates"
         android:onClick="but1"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:textColor="@color/md_white_1000"
+        android:padding="5dp"
+        android:elevation="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Coordinates not found"
+        android:id="@+id/textViewCoordinates"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:hint="Coordinates not found"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button 2"
+        android:text="Why am I here?"
         android:onClick="but2"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:background="@drawable/button"
+        android:textColor="@color/md_white_1000"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp" />
 
 </LinearLayout><!-- From: file:/C:/Users/Rizvan/AndroidStudioProjects/MyArt/app/src/main/res/layout/default_fragment_two.xml -->

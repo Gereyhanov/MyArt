@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.rizvan.myart.R;
@@ -27,6 +28,8 @@ public class DefaultFragmentTabTwo extends Fragment {
     private static final int PLACE_PICKER_REQUEST = 1;
     private static final int LAYOUT = R.layout.default_fragment_two;
 
+   public TextView textViewCoordinates;
+
     private View view;
 
     public static DefaultFragmentTabTwo getInstance () {
@@ -43,6 +46,8 @@ public class DefaultFragmentTabTwo extends Fragment {
 
         Button button1 = (Button) view.findViewById(R.id.button);
         Button button2 = (Button) view.findViewById(R.id.button2);
+
+        textViewCoordinates = (TextView)view.findViewById(R.id.textViewCoordinates);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +92,8 @@ public class DefaultFragmentTabTwo extends Fragment {
             if (resultCode == Activity.RESULT_OK) {
                 Place place = PlacePicker.getPlace(data, getActivity());
                 String toastMsg = String.format("Place: %s", place.getName());
+
+                textViewCoordinates.setText(toastMsg);
                 Toast.makeText(getContext(), toastMsg, Toast.LENGTH_LONG).show();
             }
         }
